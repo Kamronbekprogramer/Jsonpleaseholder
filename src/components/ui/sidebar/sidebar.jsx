@@ -12,6 +12,18 @@ const Sidebar = () => {
         <NavLink to="/main/brand" className="navlink" >
            Posts
         </NavLink>
+        <NavLink to="/main/todos" className="navlink" >
+           Todos
+        </NavLink>
+        <NavLink to="/main/albums" className="navlink" >
+           Albums
+        </NavLink>
+        <NavLink to="/main/photos" className="navlink" >
+           Photos
+        </NavLink>
+        <NavLink to="/main/comments" className="navlink" >
+           Comments
+        </NavLink>
     </div>
   )
 }

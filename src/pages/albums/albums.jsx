@@ -1,32 +1,30 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-const Brand = () => {
-  const [posts, setPosts] = useState([]);
+const Albums = () => {
+  const [albums, setAlbums] = useState([]);
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => {
-        console.log(response);
-        setPosts(response.data);
-      });
+    axios.get("https://jsonplaceholder.typicode.com/albums").then((response) => {
+      console.log(response);
+      setAlbums(response.data);
+    });
   }, []);
   return (
-    <div className="posts">
-      <h1 className="text-center my-3">Posts</h1>
+    <div className="albums">
+      <h1 className="text-center my-3">Albums</h1>
       <table className="table table-bordered table-hover table-striped">
         <thead>
           <tr>
+            <th>AlbumId</th>
             <th>Id</th>
             <th>Title</th>
-            <th>Body</th>
           </tr>
         </thead>
         <tbody>
-          {posts.slice(0, 13)?.map((item, index) => (
+          {albums.slice(0, 13)?.map((item, index) => (
             <tr key={index}>
+              <td>{item.userId}</td>
               <td>{item.id}</td>
               <td>{item.title}</td>
-              <td>{item.body}</td>
             </tr>
           ))}
         </tbody>
@@ -35,4 +33,4 @@ const Brand = () => {
   );
 };
 
-export default Brand;
+export default Albums;
