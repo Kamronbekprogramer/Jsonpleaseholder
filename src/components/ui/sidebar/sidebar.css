@@ -22,6 +22,23 @@
     color: #fff;
 }
 
+.logout {
+    border: 2px solid rgb(134, 7, 7);
+    margin: 60px 0px;
+    padding: 10px 15px;
+    color: red;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px #f14d4d;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.logout:hover{
+    background-color: rgb(141, 14, 14);
+    color: #fff;
+}
+
 .sidebar img {
     width: 210px;
     height: 80px;

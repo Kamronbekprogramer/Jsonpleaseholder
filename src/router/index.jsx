@@ -13,6 +13,8 @@ import Todos from "../pages/todos/todos";
 import Albums from "../pages/albums/albums";
 import Photos from "../pages/photos/photos";
 import Comments from "../pages/comments/comments";
+import Newcar from "../pages/newcar/newcar";
+// import UserModal from "../components/modal";
 const Index = () => {
     const router = createBrowserRouter(
         createRoutesFromElements(
@@ -25,6 +27,7 @@ const Index = () => {
             <Route path="albums" element={<Albums/>}/>
             <Route path="photos" element={<Photos/>}/>
             <Route path="comments" element={<Comments/>}/>
+            <Route path="newcar" element={<Newcar/>}/>
             </Route>
             // </Route>
         )

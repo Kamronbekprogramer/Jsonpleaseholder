@@ -23,11 +23,11 @@ const Login = () => {
   }
   return (
     <div className="container">
-      <div className="row mt-2">
+      <div className="row mt-5">
         <div className="col-md-6 offset-3">
         <div className="card">
           <div className="card-header">
-            <h1 className="text-center">Login</h1>
+            <h1 className="text-center ">Login</h1>
           </div>
           <div className="card-body">
           <form id="submit" onSubmit={handleSubmit}>

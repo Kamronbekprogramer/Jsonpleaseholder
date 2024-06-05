@@ -24,6 +24,12 @@ const Sidebar = () => {
         <NavLink to="/main/comments" className="navlink" >
            Comments
         </NavLink>
+        <NavLink to="/main/newcar" className="navlink" >
+           New Car
+        </NavLink>
+        <NavLink to="/" className="logout">
+           Log Out
+        </NavLink>
     </div>
   )
 }
